@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background: #f9580e;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #0c0b0b;
+}
+
+.logo{
+    width: 135px;
+    height: 50px;
+}
+
+.heading{
+    font-size: 4rem;
+    color: #f9580e;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title{
+    padding: 0 1rem ;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+header{
+    width: 100%;
+    background: #171717;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+}
+
+header .navbar ul .active,
+header .navbar ul li a:hover{
+    color: #f9580e;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #f9580e;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+.home{
+    min-height: 50vh;
+    background: linear-gradient(rgba(225,184,0,.2),rgba(236,134,0,.8)),url(images/bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.home .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 25rem;
+    text-align: center;
+}
+
+.home .content h1{
+    font-size: 10rem;
+    color: #fff;
+    padding: 0 1rem;
+    text-shadow: 0.3rem .2 rem rgba(0,0,0, .3);
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 25rem;
+}
+
+.home .content button {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: #f9580e;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+    margin: 4rem 0;
+    border-color: #f9580e;
+}
+
+.home .content button:hover{
+    background: none;
+    border: .2rem solid #f9580e;
+}
+
+.offers {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.offers .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.offers .box-container .box{
+    height: 25rem;
+    width: 25rem;
+    background: #171717;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem #eeeeee96;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.offers .box-container .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #ffc246;
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+
+.offers .box-container .box h3{
+    font-size: 3rem;
+    color: #f9580e;
+    transition: .2s;
+}
+
+.offers .box-container .box p{
+    font-size: 1.3rem;
+    padding: .7rem 2rem;
+    color: #fff;
+}
+
+.offers .box-container .box:hover i{
+    background: #f9580e;
+}
+
+.offers .box-container .box:hover h3{
+    color: #ffc246;
+}
+
+.equipo{
+    color: #171717;
+}
+
+.equipo .box-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.equipo .box-container .box{
+    width: 28rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem #eeeeee96;
+    margin: 2rem;
+    background: #0c0b0b;
+    margin: 4rem 2rem;
+}
+
+.equipo .box-container .box img{
+    height: 8.5rem;
+    width: 8.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -4rem;
+    border: .6rem solid #f9580e;
+    border-left: .6rem solid #ffc246;
+    border-bottom: .6rem solid #ffc246;
+}
+
+.equipo .box-container .box h3{
+    font-size: 2rem;
+    color: #f9580e;
+    padding: 0 .5rem;
+}
+
+.equipo .box-container .box p{
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1.3rem .1rem;
+}
+
+.equipo .box-container .box .stars i{
+    font-size: 1.6rem;
+    color: #ffc246;
+    padding: 1.3rem .1rem;
+}
+
+.contact {
+    background: #171717;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    padding-right: 6rem;
+}
+
+.contact .row .form-container input, textarea {
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: #f9580e;
+    font-size: 1.7rem;
+    transition: .2s linear;
+}
+
+.contact .row .form-container input:focus, textarea:focus {
+    border: .4rem solid #f9580e;
+}
+
+.contact .row .form-container textarea {
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+    height: 5rem;
+    width: 17rem;
+    background: #f9580e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    background: none;
+    color: #f9580e;
+    border: .2rem solid #f9580e;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer .icons {
+    padding: 3rem 0;
+}
+
+.footer .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffc246;
+    border: .2rem solid #ffc246;
+    font-size: 2rem;
+    margin: 0 .1rem;
+    transition: .2s linear;
+
+}
+
+.footer .icons a:hover {
+    color: #fff;
+    background: #f9580e;
+    border-color: #f9580e;
+}
+
+.destino__img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+.destino__img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 24px;
+}
+
+.destino__columna {
+    position: relative;
+    width: 25%;
+    max-width: 50%;
+    padding: 10px;
+    text-align: center; 
+  }
+
+  .destino__columna h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    z-index: 1;
+    max-width: 90%;
+    margin: 0; 
+  }
+
+.destino .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+.destino__columna:hover .destino__img{
+    box-shadow: 0 0 0 8px #fff,
+    0 15px 200px;
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: #171717;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 3rem;
+        display: block;
+    }
+
+    header .nav-toggle {
+        top:5.5rem;
+        opacity: 1;
+    }
+
+    .home .content p {
+        padding: 1.5rem 2rem;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+    .about .row .image img {
+        height: 30vh;
+        width: 90vw;
+    }
+
+    .about .row .content {
+        padding: 0 2.5rem;
+    }
+
+    .course .box-container {
+        width: 100%;
+    }
+
+    .contact .row {
+        flex-flow: column;
+    }
+
+    .contact .row .form-container {
+        width: 90%;
+        padding: 0;
+    }
+
+    .destino__img{
+        width: 400px;
+    }
+    .destino{
+        padding: 10px;
+    }
+    .destino__columna {
+        width: 50%;
+    }
+}
